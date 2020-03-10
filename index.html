@@ -25,7 +25,46 @@ body {
 #image-4{
     height: 160px;
 }
+#text-logo span{
+	font-size: 28px
+}
+#img-logo{
+	width: 75%;
+}
+#text-logo #number{
+	font-size: 50px
+}
+.footer-box {
+	background: #f5f5ec;
+/*	border-radius: 20px; */
+/*	max-width: 560px; */
+	margin: 0 auto;
+	padding: 20px 10px 10px 10px;
+	overflow: hidden;
+}
+.footer-box p {
+	font-size: 12px;
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+.footer-box p a {
+	color: #006600;
+}
+.line-gray {
+	background: #BBBBBB;
+	height: 1px;
+	line-height: 1px;
+	margin: 20px auto;
+	width: auto;
+}
+.copyright {
+	text-align: center;
+	font-size: 11px;
+}
 @media screen and (max-width: 600px) {
+	#top-liner{
+		width: 100% !important
+	}
     #section-pc{
         display: none;
     }
@@ -98,35 +137,73 @@ body {
         width: 100%;
         background-color:#fffbe3 ;
     }
+	.space-div-1{
+		width: 100% !important;
+	}
     #section-sp td .text{
         padding: 0 !important;
     }
     .space-des{
         width: 100% !important;
     }
+	#column-logo--left{
+		width: 50%
+	}
+	#column-logo--right{
+		width: 50%
+	}
+	#text-logo span{
+		margin-left: 0 !important;
+		font-size: 18px;
+	}
+	#text-logo #number{
+		font-size: 32px
+	}
+	.footer-box p {
+	font-size: 14px;
+	}
+	.copyright {
+		font-size: 8px;
+	}
+	.point-box, .goods-box, .sns-box, .sns-box2, .footer-box {
+		width: auto;
+	/*	margin: 0 2%; */
+	}
+	.campaign-box {
+		width: auto;
+		margin: 0 2%;
+	}
 }
 </style>
 
 </head>
-<body style="background:#f6f6f6;">
+<body style="background:#fff;">
 
-<div style="background:#f6f6f6; font-size:13px;" id="table-layout">
+<div style="background:#fff; font-size:13px;" id="table-layout">
 	<div style="width:100%; margin:0 auto;">
 		<!-- A ロゴ-->
-		<table style="background:#6EB92B; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
+		<div id="top-liner" style="height:2px; width:600px; background-color: #fdca00; margin:auto"></div>
+		<table style="background:#fff; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
 			<tr>
-				<td style="border:0; margin:0; padding:0;">
-					<div style="background:#FFFFFF;">
+				<td id="column-logo--left" style="border:0; margin:0; padding:0; width: 60%;">
+					<div>
+						<img id="img-logo" src="./images/logo.png" alt="Kracie"/>
+					</div>
+				</td>
+				<td id="column-logo--right" style="border:0; margin:0; padding:0; width: 40%;">
+					<div id="text-logo" style="background:#FFFFFF;">
 
-						<img src="./images/banner-logo.png" width="100%" alt="Kracie"/>
-
+						<span style="margin-left: 30px">2020</span>
+						<span>年</span>
+						<span id="number">4</span>
+						<span>月</span>
 					</div>
 				</td>
 			</tr>
 		</table>
 		<!-- /A -->
 
-		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="5px" alt=""/>
+		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="1px" alt=""/>
 
 		<!-- C1 メルマガ限定プレゼント -->
 		<table style="background:#fffbe3; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
@@ -140,7 +217,7 @@ body {
 		</table>
 		<!-- /C1 -->
 
-		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="5px" alt=""/>
+		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="1px" alt=""/>
 
 <!--★新着メインここから-->
 	<!-- B 新着記事① メインビジュアル -->
@@ -172,13 +249,14 @@ body {
 		</table>
 	<!-- /C1 -->
 
-		<img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/>
+		<!-- <img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/> -->
 
 <!--★新着メインここまで-->
 
 <!--★新着１２ここから-->
 		<!-- E 新着記事②③-->
-		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
+		<div class="space-div-1" style='width: 600px; height: 20px; background-color: #edebda; margin: auto'></div>
+		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; background-color: #edebda" align="center">
 			<tr>
 				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0; vertical-align:top;">
 					<div class="image" style="width:295px;">
@@ -205,8 +283,8 @@ body {
 			</tr>
 		</table>
 		<!-- /E -->
-
-		<img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/>
+		<div class="space-div-1" style='width: 600px; height: 20px; background-color: #edebda; margin: auto'></div>
+		<!-- <img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/> -->
 
 <!--★新着１２ここまで-->
 
@@ -224,111 +302,76 @@ body {
 		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="3px" alt=""/>
 
 		<!-- D クラシエおすすめ情報 1-->
-		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
+		<table style="background:#fff; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
 			<tr>
-				<td class="column column--middle" style="width:295px; border:0; margin:0; padding:0;">
-					<div class="image" style="width:295px;">
-					<a href="http://www.kracie.co.jp/ph/coccoapo/products/index_tousyaku.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/osusume01.jpg" alt="むくみや冷えが気になる・カラダが冷える方への漢方薬"/>
+				<td style="border:0; margin:0; padding:0;">
+					<div>
+					<a href="https://www.kracie.co.jp/kampo/kampofullife/body/?p=7127&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+					<img style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/osusume01.jpg" alt="むくみや冷えが気になる・カラダが冷える方への漢方薬"/>
 					</a>
-					</div>
-				</td>
-				<td class="column column--middle" style="background:#fff; border:0; margin:0; padding:0;">
-					<div class="text" style="width:265px; padding:0 15px;">
-					<b><a href="http://www.kracie.co.jp/ph/coccoapo/products/index_tousyaku.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					むくみや冷えが気になる・カラダが冷える方への漢方薬</b></a><br />
-					「当帰芍薬散錠（とうきしゃくやくさんじょう）」は、水分代謝を高め、余分な水分を取り除き、また、血行を促し、足腰の冷え性を改善させます。<br />
-					<!-- <br />
-					<a href="http://www.kracie.co.jp/ph/coccoapo/products/index_tousyaku.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					詳しく見る
-					</a> -->
 					</div>
 				</td>
 			</tr>
-        </table>
-        <div class="space-div"></div>
-		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="7px" alt=""/>
-
-		<!-- E クラシエおすすめ情報　2-->
-		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; background-color: #fffbe3;" align="center">
+		</table>
+	<!-- /B -->
+	<!-- C1 新着記事①文言 -->
+		<table style="background:#fff; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
 			<tr>
-				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0;">
-					<div class="image" style="width:295px;">
-					<a href="http://www.kracie.co.jp/ph/k-therapy/prescription/hangekobokuto.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/osusume02.jpg" alt="のどのつかえ感、のどの違和感が気になる方におすすめの漢方薬"/>
-					</a>
+				<td style="border:0; margin:0; padding:15px 0;">
+					<div>
+						<div class="text-content--medium" style="padding:0 15px;"><a  href="http://www.kracie.co.jp/ph/coccoapo/products/index_tousyaku.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+						<b>むくみや冷えが気になる・カラダが冷える方への漢方薬</b></a><br />
+						「当帰芍薬散錠（とうきしゃくやくさんじょう）」は、水分代謝を高め、余分な水分を取り除き、また、血行を促し、足腰の冷え性を改善させます。
+						</div>
 					</div>
 				</td>
-				<td class="column column2_text column--res" style="background:#fff; border:0; margin:0; padding:0;">
-					<div class="text" style="width:265px; padding:0 15px;">
+			</tr>
+		</table>
+	<!-- /C1 -->
+
+		<!-- <img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/> -->
+
+<!--★新着メインここまで-->
+
+<!--★新着１２ここから-->
+		<!-- E 新着記事②③-->
+		<div class="space-div-1" style='width: 600px; height: 20px; background-color: #fffbe3; margin: auto'></div>
+		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; background-color: #fffbe3" align="center">
+			<tr>
+				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0; vertical-align:top;">
+					<div class="image" style="width:295px;">
+					<a href="https://www.kracie.co.jp/kampo/kampofullife/body/?p=7125&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/osusume02.jpg" alt="のどのつかえ感、のどの違和感が気になる方におすすめの漢方薬"/></a>
+					</div>
+					<div class="text text-content--medium" style="background:#fff; width:265px; padding: 10px 15px;">
 					<a href="http://www.kracie.co.jp/ph/k-therapy/prescription/hangekobokuto.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
 					<b>のどのつかえ感、のどの違和感が気になる方におすすめの漢方薬</b></a><br />
 					ストレスをためがちな方などには「半夏厚 朴湯（はんげこうぼくとう）」がおすすめ です。<br />
-					<!-- <br />
-					<a href="http://www.kracie.co.jp/ph/k-therapy/prescription/hangekobokuto.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					詳しく見る
-					</a> -->
 					</div>
 				</td>
-			</tr>
-		</table>
-		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="7px" alt=""/>
-        <div class="space-div"></div>
-		<!-- F クラシエおすすめ情報　2-->
-		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; background-color: #fffbe3;" align="center">
-			<tr>
-				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0;">
+				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0 0 0 10px; vertical-align:top;">
 					<div class="image" style="width:295px;">
-					<a href="http://www.kracie.co.jp/ph/k-therapy/prescription/keisikaryukotuboreito.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/osusume03.jpg" alt="不眠やイライラでストレスを感じやすい方におすすめの漢方薬"/>
-					</a>
+					<a href="https://www.kracie.co.jp/kampo/kampofullife/heart/?p=7139&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/osusume03.jpg" alt="不眠やイライラでストレスを感じやすい方におすすめの漢方薬"/></a>
 					</div>
-				</td>
-				<td class="column column2_text column--res" style="background:#fff; border:0; margin:0; padding:0;">
-					<div class="text" style="width:265px; padding:0 15px;">
+					<div class="text" style="background:#fff; width:265px; padding: 10px 15px;">
 					<a href="http://www.kracie.co.jp/ph/k-therapy/prescription/keisikaryukotuboreito.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
 					<b>不眠やイライラでストレスを感じやすい方におすすめの漢方薬</b></a><br />
 					ちょっとしたことで興奮したりする方には 「桂枝加竜骨牡蛎湯（けいしかりゅうこつ ぼれいとう）」がおすすめです。<br />
-					<!-- <br />
-					<a href="http://www.kracie.co.jp/ph/k-therapy/prescription/keisikaryukotuboreito.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					詳しく見る
-					</a> -->
 					</div>
 				</td>
 			</tr>
 		</table>
+		
 		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="7px" alt=""/>
 
 		<!-- /D -->
 
 		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="15px" alt=""/>
-        <div class="space-div--medium"></div>
+        <div class="space-div-1" style='width: 600px; height: 20px; background-color: #fffbe3; margin: auto'></div>
 <!--★クラシエからのおすすめここまで-->
 
 <!--★お役立ち情報ここから-->
-		<!-- C2 お役立ち情報-->
-		<!-- <table style="background:#fff; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
-			<tr>
-				<td style="border:0; margin:0; padding:15px 0;">
-					<div>
-						<p style="font-size:18px; font-weight:bold; color:#117192; line-height:1; margin:0 0 5px 15px;">お役立ち情報</p>
-							<table style="padding: 15px 0 15px 0;">
-								<tr>
-									<td width="95" style="padding: 0 5;"><a href="https://www.kracie.co.jp/kampo/kampofullife/kampo?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank" border="1"><img src="https://unsubscribe.kampofullife.jp/img/img-201901/eat.png" height="95px" width="95px" alt=""/></a></td>
-									<td><a href="https://www.kracie.co.jp/kampo/kampofullife/kampo?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank"><b>漢方を知る</b></a><br />
-									漢方の基礎や考え方をご紹介しています。漢方の基礎を知って、日々の生活に取り入れましょう。</td>
-								</tr>
-								<tr>
-									<td width="95" style="padding: 0 5;"><a href="https://www.kracie.co.jp/kampo/kampofullife/kampo_search?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank" border="1"><img src="https://unsubscribe.kampofullife.jp/img/img-201901/eat.png" height="95px" width="95px" alt=""/></a></td>
-									<td><a href="https://www.kracie.co.jp/kampo/kampofullife/kampo_search?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank"><b>漢方を探す</b></a><br />
-									あなたの症状にぴったりの漢方薬を症状別に一覧でご覧いただけます。あなたの症状にあった漢方薬を見つけて、健やかな毎日を送りましょう。</td>
-								</tr>
-							</table>
-					</div>
-				</td>
-			</tr>
-		</table> -->
-		<!-- /C2 -->
 
 		<img class='space-gif' src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/>
         
@@ -346,49 +389,69 @@ body {
 				</td>
 			</tr>
 		</table>
-		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
+		<table style="background:#fff; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
 			<tr>
-				<td class="column column--middle" style="width:192px; border:0; margin:0; padding:0; vertical-align:top;">
-					<div class="image" style="width:192px;">
+				<td style="border:0; margin:0; padding:0;">
+					<div>
 					<a href="https://www.kracie.co.jp/kampo/kampofullife/body/?p=2694&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/top01.jpg" alt="1位"/>
+					<img style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/top01.jpg" alt="1位"/>
 					</a>
 					</div>
-					<div class="text" style="background:#fff; width:162px; padding: 10px 15px;">
-					<b>1位</b>
-					<a href="https://www.kracie.co.jp/kampo/kampofullife/body/?p=2694&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<b>寒気、鼻水、のどの痛み、肩こり、節々の痛み・・・風邪の症状に合わせた、漢方薬の使い分け</b></a><br /><br /></div>
 				</td>
-
-				<td class="column column--res" style="width:192px; border:0; margin:0; padding:0 0 0 12px; vertical-align:top;">
-					<div class="image" style="width:192px;">
-					<a href="https://www.kracie.co.jp/kampo/kampofullife/eat/?p=2723&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/top02.jpg" alt="2位"/>
-					</a>
+			</tr>
+		</table>
+	<!-- /B -->
+	<!-- C1 新着記事①文言 -->
+		<table style="background:#fff; width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0;" align="center">
+			<tr>
+				<td style="border:0; margin:0; padding:15px 0;">
+					<div>
+						<div class="text-content--medium" style="padding:0 15px;"><b>1位</b><a  href="http://www.kracie.co.jp/ph/coccoapo/products/index_tousyaku.html?utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+						<b>寒気、鼻水、のどの痛み、肩こり、節々の痛み・・・風邪の症状に合わせた、漢方薬の使い分け</b></a><br />
+						</div>
 					</div>
-					<div class="text" style="background:#fff; width:162px; padding: 10px 15px;">
+				</td>
+			</tr>
+		</table>
+	<!-- /C1 -->
+
+		<!-- <img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/> -->
+
+<!--★新着メインここまで-->
+
+<!--★新着１２ここから-->
+		<!-- E 新着記事②③-->
+		<div class="space-div-1" style='width: 600px; height: 20px; background-color: #f4ffe2; margin: auto'></div>
+		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; background-color: #f4ffe2" align="center">
+			<tr>
+				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0; vertical-align:top;">
+					<div class="image" style="width:295px;">
+					<a href="https://www.kracie.co.jp/kampo/kampofullife/eat/?p=2723&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/top02.jpg" alt="2位"/></a>
+					</div>
+					<div class="text text-content--medium" style="background:#fff; width:265px; padding: 10px 15px;">
 					<b>2位</b>
 					<a href="https://www.kracie.co.jp/kampo/kampofullife/eat/?p=2723&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<b>［栄養士が教える］あたため上手な「しょうが湯」しょうがの効果とアレンジレシピ</b></a><br /><br /></div>
-				</td>
-
-				<td class="column column--res" style="display:block; width:192px; border:0; margin:0; padding:0 0 0 12px; vertical-align:top;">
-					<div class="image" style="width:192px;">
-					<a href="https://www.kracie.co.jp/kampo/kampofullife/comic_contents/?p=7123&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/top03.jpg" alt="3位"/>
-					</a>
+					<b>［栄養士が教える］あたため上手な「しょうが湯」しょうがの効果とアレンジレシピ</b></a><br />
 					</div>
-					<div class="text" style="background:#fff; width:162px; padding: 10px 15px;">
+				</td>
+				<td class="column column--res" style="width:295px; border:0; margin:0; padding:0 0 0 10px; vertical-align:top;">
+					<div class="image" style="width:295px;">
+					<a href="https://www.kracie.co.jp/kampo/kampofullife/comic_contents/?p=7123&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
+					<img  style="width:100%;" src="https://unsubscribe.kampofullife.jp/img/img-202002/top03.jpg" alt="3位"/></a>
+					</div>
+					<div class="text" style="background:#fff; width:265px; padding: 10px 15px;">
 					<b>3位</b>
 					<a href="https://www.kracie.co.jp/kampo/kampofullife/comic_contents/?p=7123&utm_source=mailmagazine&utm_medium=email&utm_campaign=20200204" target="_blank">
-					<b>【マンガ】風邪は早めの対処が◎!葛根湯を味方につけて風邪に負けない冬に！</b></a><br /><br /></div>
+					<b>【マンガ】風邪は早めの対処が◎!葛根湯を味方につけて風邪に負けない冬に！</b></a><br />
+					</div>
 				</td>
 			</tr>
 		</table>
 		<!-- /F -->
 
-		<img src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/>
-
+		<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="10px" alt=""/>
+		<div class="space-div-1" style='width: 600px; height: 20px; background-color: #f4ffe2; margin: auto'></div>
 <!--★今月のランキングここまで-->
 
 <!--- Section 3-->
@@ -500,66 +563,54 @@ body {
 		<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; word-break:break-all;" align="center"><tr><td>
 			<!-- H -->
 
-			<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; word-break:break-all;" align="center">
-				<tr>
-					<td style="border:0; margin:0; padding:0;">
-						<div style="line-height:1.4; padding:15px 15px 0;">【編集後記】<br />メルマガ担当のフクです。グッと気温が下がって冷えが身に凍みる2月は、風邪やインフルエンザ、新型ウィルスへの感染も心配ですね。僕の子どもの学校でも、お休みが多くなっているそうです。そこで、2月のおすすめとして、風邪の初期症状ごとの漢方薬や、カラダをポカポカに温めるしょうが湯などをご紹介しています。真冬を元気に乗り切りましょう！<br />
-						</div>
-					</td>
-				</tr>
-			</table>
-			<!-- /H -->
-
-			<img class="space-gif" src="https://unsubscribe.kampofullife.jp/img/spacer.gif" height="20px" alt=""/>
-
-			<!-- K-->
-			<table style="width:600px; margin:0 auto; border-collapse:collapse; border-spacing:0; word-break:break-all;" align="center">
-				<tr>
-					<td style="border:0; margin:0; padding:0;">
-						<div style="line-height:1.4; padding:15px 15px 0">＜Kampoful Life メールマガジンについて＞<br />
-							このメールは、クラシエの Kampoful Life 会員登録時に「Kampoful Life会員規約」にご同意いただいた方を対象にお送りしております。今後も「Kampoful Life メールマガジン」として、最新情報を定期的に配信させていただきます。<br />
-						</div>
-
-						<div style="line-height:1.4; padding:15px 15px 0; margin:15px 0 0;">
-
-							◆受信するメールアドレス(ログイン時のメールアドレス)の変更<br />下記のリンクよりログインし、新しいメールアドレスを入力ください。<br />
-							<a href="https://www.kracie.co.jp/app/member_kampo/kampofullife/member/mail_chg/?c=2&utm_source=mailmagazine&utm_medium=email&utm_campaign=kl_addresschange" target="_blank" style="color:#666;">メールアドレスを変更する＞＞</a><br />
-							<br />
-
-							◆Kampoful Life メールマガジンお問い合わせ<br />
-							下記のメールアドレス宛にお問い合わせください。<br />
-							お問い合わせメールアドレス：<a href="mailto:e-mailnewsletter-kampoful-life@kracie.jp" target="_blank" style="color:#666;">e-mailnewsletter-kampoful-life@kracie.jp</a><br />
-							<br />
-
-							ご注意：本メールにご返信でのお問い合わせは、回答はできかねますのでご注意ください。 <br />
-							<br />
-
-							◆選べる電子マネー「EJOICAセレクトギフト」について<br />
-                            ・「EJOICAセレクトギフト」は、株式会社NTTカードソリューションが発行する電子マネーギフトです。<br />
-                            ・掲載されているロゴは、各社の商標または登録商標です。<br/>
-                            ・本キャンペーンはクラシエ製薬株式会社による提供です。<br/>
-                            ・本キャンペーンについてのお問い合わせは電子マネー各社ではお受けしておりません。<br/>
-                            　お問い合わせは<br/>
-                            membersupport-kampoful-life@kracie.jpまでお願い致します。<br/>
-                            <br/>
-                            ◆メールの内容に覚えがない場合は、お手数ですが本メールに返信の上、破棄していただきますようお願いいたします。
-							<!-- ◆Kampoful Life メールマガジンの配信停止<br />
-							配信停止をご希望の方は、下記のリンクをクリックください。<font color="red">下記のリンクをクリックするだけで、メールは配信停止</font>となります。但し、数日間はメールが配信されることもあります。<br />
-							<a href="https://unsubscribe.kampofullife.jp/?n=##__uid__##" target="_blank" style="color:#666;">このメルマガの配信を停止する＞＞</a><br /> -->
-						</div>
-
-						<!-- <div style="line-height:1.4; padding:15px 15px 0; margin:15px 0 0;">
-							発行元：クラシエホールディングス株式会社<br />
-							〒108-0022　東京都港区海岸三丁目20番20号<br />
-							<a href="http://www.kracie.co.jp/" target="_blank" style="color:#666;">http://www.kracie.co.jp/</a><br />
-							個人情報保護方針について<br />
-							<a href="http://www.kracie.co.jp/privacy/" target="_blank" style="color:#666;">http://www.kracie.co.jp/privacy/</a><br />
-						</div> -->
-
-					</td>
-				</tr>
-			</table>
-			<!-- /K -->
+			<div class="footer-box">
+				<p>
+					【編集後記】<br />メルマガ担当のフクです。グッと気温が下がって冷えが身に凍みる2月は、風邪やインフルエンザ、新型ウィルスへの感染も心配ですね。
+					僕の子どもの学校でも、お休みが多くなっているそうです。そこで、2月のおすすめとして、風邪の初期症状ごとの漢方薬や、カラダをポカポカに温めるしょうが湯などをご紹介しています。
+					真冬を元気に乗り切りましょう！<br />
+				</p>
+				<div class="line-gray"></div>
+		  <p>
+					＜<strong>Kampoful メールマガジン</strong>について＞<br>
+			このメールは、クラシエの Kampoful Life会員登録時に「Kampoful Life会員規約」にご同意いただいた方を対象にお送りしております。今後も「Kampoful Lifeメールマガジン」として、最新情報を定期的に配信させていただきます。 
+				</p>
+				<div class="line-gray"></div>
+				<p>
+					◆受信するメールアドレス(ログイン時のメールアドレス)の変更<br>
+					下記のリンクよりログインし、新しいメールアドレスを入力ください。<br>
+					<a class="footer-link" href="http://f.crmf.jp/cam_lab/cc.php?m=27mz0z8z397a" target="_blank">メールアドレスを変更する>></a><br>
+				</p>
+				<p>◆Kampoful メールマガジンお問い合わせ<br>
+					下記のメールアドレス宛にお問い合わせください。<br>
+					お問い合わせメールアドレス：<br>
+					<a class="footer-link" href="mailto:e-mailnewsletter-kampoful-life@kracie.jp">e-mailnewsletter-kampoful-life@kracie.jp</a><br>
+					ご注意：本メールにご返信でのお問い合わせは、回答はできかねますのでご注意ください。
+				</p>
+				<p>
+					◆選べる電子マネー「EJOICAセレクトギフト」について<br>
+					・「EJOICAセレクトギフト」は、株式会社NTTカードソリューションが発行する電子マネーギフトです。<br>
+					・掲載されているロゴは、各社の商標または登録商標です。<br>
+					・本キャンペーンはクラシエ製薬株式会社による提供です。<br>
+					・本キャンペーンについてのお問い合わせは電子マネー各社ではお受けしておりません。<br >
+					　お問い合わせは<a class="footer-link" href="mailto:membersupport-kampoful-life@kracie.jp">membersupport-kampoful-life@kracie.jp</a>までお願い致します。<br>
+				</p>
+				<p>
+					◆メールの内容に覚えがない場合は、お手数ですが本メールに返信の上、破棄していただきますようお願いいたします。
+				</p>
+					<div class="line-gray"></div>
+				<p>
+					発行元：クラシエホールディングス株式会社<br>
+					〒108-0022　東京都港区海岸三丁目20番20号<br>
+					<a class="footer-link" href="http://www.kracie.co.jp/" target="_blank">http://www.kracie.co.jp/</a><br>
+					個人情報保護方針について<br>
+					<a class="footer-link" href="http://www.kracie.co.jp/privacy/" target="_blank">http://www.kracie.co.jp/privacy/</a><br>
+				</p>
+					<div class="line-gray"></div>
+				<p>
+					Copyright(C) Kracie Holdings, Ltd. All Rights Reserved.  
+				</p>
+		  <!-- <div class="line-gray"></div> -->
+		</div>
 
 		</td></tr></table>
 		<!-- L-->
